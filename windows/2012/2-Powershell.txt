@@ -1,0 +1,42 @@
+---------------------
+# remove GUI
+---------------------
+# (server configuration)
+--> sconfig
+---------------------
+# view card network
+--> netsh interface ipv4 show interface
+---------------------
+# change ip network
+--> netsh interface ipv4 set address name=xxx source=static address=xxx.xxx.xxx.xxx mask=255.255.255.0 gateway=xxx.xxx.xxx.xxx
+---------------------
+# make DNS Server
+--> netsh interface ipv4 add dnsserver name=xxx address=xxx.xxx.xxx.xxx INDEX=1
+---------------------
+# Core Config to manage desktop server
+# login CDcore config 
+--> d:
+# view folder
+--> d:dir (Enter)
+--> d: cd CoreConfigurator.msi (Enter)
+--> setup softwaer
+# open program
+--> c: prog(tab to complite order) (Enter)
+# view folder
+--> c:\xxxxx> dir (Enter)
+--> c:\xxxxx> cd CoreConfig - c:\xxxxx\xxxx> cd xxx.exe
+---------------------
+# powershell
+# install GUI
+--> add-windowsfeature -Name PowerShell-ISE,Server-GUI-Mgmt-Infra,Server-GUI-Shell -computer adc -Restart 
+---------------------
+# Minimal installation:
+--> Mini server interface = remove roles and features = server graphical shell 
+uninstall-windowsfeature Server-Gui-Shell -whatif
+uninstall-windowsfeature Server-Gui-Shell -Restart
+install-windowsfeature Server-Gui-Shell -Restart
+---------------------
+# Remove a feature (feature-on-demand):
+
+
+

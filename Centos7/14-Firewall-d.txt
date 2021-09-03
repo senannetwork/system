@@ -1,0 +1,44 @@
+------------------------
+----------------
+-----------
+#Fireall-d
+-----------
+----------------
+------------------------
+# check status
+$ firewall-cmd --state
+------------------------
+# view firewall
+$ systemctl status firewalld
+------------------------
+# config firewall for IPv4
+$ vi /etc/sysctl.conf (add = net.ipv4.ip_forward=1)
+------------------------
+# view Zone 
+$ firewall-cmd --get-default-zone
+------------------------
+# active Zone 
+$ firewall-cmd --get-active-zones
+------------------------
+# lists Zone 
+$ firewall-cmd --get-zones
+  (drop = low trusted)
+  (block = regikt)
+  (public = not trusted)
+  (external = gateway)
+  (trusted = trusted)
+  (internal = trusted)
+  (dmz = specail shar)
+  (work = trusted) 
+------------------------
+# change default Zone 
+$ firewall-cmd --set-default-zone=home (or any zone)
+------------------------
+# give ip each Zone for temp
+$ firewall-cmd --zone=home --change-interface=ens34
+------------------------
+# give ip each Zone for permanent 
+$ vi /etc/sysconfig/networ-scripts/ens33 (Add ZONE=home) save
+$ reboot
+ 
+

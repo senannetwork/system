@@ -1,0 +1,17 @@
+------------------------
+----------------
+-----------
+#Ssh Connection
+-----------
+----------------
+------------------------
+#To connect to another server used ssh
+$ssh xxx.xxx.xxx.xxx
+$ssh root@xxx.xxx.xxx.xxx
+------------------------
+#where found the key for ssh
+$cd root/.ssh/known_hosts
+------------------------
+#change the user or root
+$su -user
+$su (this for root)

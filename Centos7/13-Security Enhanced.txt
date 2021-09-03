@@ -1,0 +1,35 @@
+------------------------
+----------------
+-----------
+#Security Enhanced (SE linux)
+-----------
+----------------
+------------------------
+#L1 DAC (Discreationary access control)
+------------------------
+#L2 ACLs (Access Control Lists)
+------------------------
+#L3 MAC (Mandatory Access COntrol)
+------------------------
+#L3 RBAC (Role-based Access Control)
+------------------------
+#to now status se linux
+$sestatus
+------------------------
+#to now postion se linux
+$ls -Z
+------------------------
+#to now pross se linux
+$ps -eZ
+------------------------
+#SELinux access control
+------------------------
+#to change status se linux
+$setenforce 1 = enforce
+$setenforce 0 = permissive
+------------------------
+#to config setenforce
+$vi /etc/selinux/config = change SELINUX=permissive or enforcing
+------------------------
+
+

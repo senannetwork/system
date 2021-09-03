@@ -1,0 +1,12 @@
+------------------------
+----------------
+-----------
+#permission users
+-----------
+----------------
+------------------------
+# To give permission root to users must used this
+$ vi /etc/sudoers
+------------------------
+# and add permission users under root
+  admin ALL(ALL)  ALL

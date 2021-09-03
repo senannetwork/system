@@ -1,0 +1,14 @@
+------------------------
+----------------
+-----------
+#Security
+-----------
+----------------
+------------------------
+#Denied root
+$vi /etc/ssh/sshd_config
+#Authentication change from yes to no
+1- remove in the begin #
+2- PermitRootLogin no
+#To restart the service
+$service sshd restart

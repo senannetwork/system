@@ -1,0 +1,21 @@
+------------------------
+----------------
+-----------
+#Addittional resources
+-----------
+----------------
+------------------------
+# to check your system if x86 or x32
+$uname -r
+------------------------
+# insart repo
+$sudo wget http://repository.it4i.cz/mirrors/repoforge/redhat/el6/en/x86_64/rpmforge/RPMS/rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+------------------------
+# to import key
+$sudo rpm --import http://apt.sw.be/RPM-GPG-KEY.dag.txt
+------------------------
+# to check key
+$sudo rpm -i rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+------------------------
+# to control for pross
+$yum install htop

@@ -1,0 +1,19 @@
+------------------------
+----------------
+-----------
+#Network Tooles
+-----------
+----------------
+------------------------
+------------------------
+#setup ifconfig
+$yum install net-tools
+------------------------
+------------------------
+#Interface for card network
+$yum install NetworkManager-tui
+$nmtui edit (name file)
+------------------------
+#Interface for card network
+$yum install NetworkManager.service
+

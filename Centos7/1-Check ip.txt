@@ -1,0 +1,17 @@
+------------------------
+----------------
+-----------
+#Check ip
+-----------
+----------------
+------------------------
+#Ip address show
+$ip add
+------------------------
+#setup ifconfig
+$yum install net-tools
+------------------------
+#Interface for card network
+$yum install networkManager-tui
+$nmtui edit (name file)
+ip add

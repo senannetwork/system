@@ -1,0 +1,15 @@
+------------------------
+----------------
+-----------
+#Information system
+-----------
+----------------
+------------------------
+$vi /etc/hostname
+(put for hostname)
+$vi /etc/hosts
+(your-ip hostname)
+------------------------
+#restart system
+$shutdown -r now
+------------------------

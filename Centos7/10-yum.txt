@@ -1,0 +1,41 @@
+------------------------
+----------------
+-----------
+#Install packages
+-----------
+----------------
+------------------------
+#to install packges
+$ yum zip unzip
+$ sudo !! (execut last order )
+------------------------
+#to know if packges is install or no
+$ yum list python
+------------------------
+#to search packges
+$ yum search zip unzip
+------------------------
+#to remove packges
+$ yum remove zip unzip
+------------------------
+#to grouplist packges
+$ yum grouplist
+------------------------
+#to groupinfo packges
+$ yum groupinfo "Security Tools"
+------------------------
+#to grouplist packges
+$ yum grouplist
+------------------------
+#to information packges
+$ yum groupinfo "xxx"
+------------------------
+#to install packges
+$ yum groupinstall "xxx"
+------------------------
+#to install part from packges
+$ yum groupinstall "xxx" aaa bbb
+------------------------
+#to remove packges
+$ yum groupremove "xxx" aaa bbb
+
