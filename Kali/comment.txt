@@ -2,3 +2,27 @@
 2-ls = view folder
 3-ls -l = view fplder like list
 4-ls -la = view permation for folder
+5-ls -d */ = show just folder
+6-ls -lh = view detailes for folder
+7-ls -s > out.txt = make file for detalis
+8-ls -s > Learn/out.txt =make file and put in the path
+9-sudo apt-get update = update system
+10-sudo apt-get upgrade
+11-sudo apt-get dist-upgrade
+12-sudo su = full permission
+13-mkdir xxx = make folder
+14-touch out.txt = make doc.txt
+15-cp omar.txt /home/test/Desktop/my-lab/Learn  = copy past for everthing
+16-cp full path1 full path2 
+17-mv xxx full path  = move everthing
+18-rm xxx 	     = delete everthing
+19-rm full path/xxx
+20-rmdir xxx = delete folder if empty
+21-rm - r = delete everthing
+22-cat test/out.txt = show what write there
+23-cat >> test/out.txt == to add new line for file
+24-cat > test/out.txt  = overwrite on the file
+25-locate out.txt = search for txt
+26-whereis out.txt = show the location
+27-which in.txt = search for loction
+28-find / -type f -name out.txt = find in hard
