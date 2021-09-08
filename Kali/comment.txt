@@ -1,0 +1,4 @@
+1-pwd = view path
+2-ls = view folder
+3-ls -l = view fplder like list
+4-ls -la = view permation for folder
