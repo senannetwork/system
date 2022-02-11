@@ -1,0 +1,46 @@
+------------------------
+----------------
+-----------
+-Static -ip
+-----------
+----------------
+------------------------
+#install nano
+$yum install nano
+------------------------
+#----VI-------
+$vi xxxxxxx
+i=insert
+esc=exit
+:wq=save
+:q!=exit
+------------------------
+#check the position
+$ pwd
+# go to diroctory network
+$ cd etc/sysconfig/network-scripts/
+$ vi ifcfg-ens33
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=dhcp ===== static
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=ens33
+UUID=6fdbf672-534b-43d8-bfcf-1edd8e78b885
+DEVICE=ens33
+ONBOOT=yes
+IPADDR=xxx.xxx.xxx.xxx
+NETMASK=255.255.255.0
+GATWAY=xxx.xxx.xxx.xxx
+DNS1=8.8.8.8
+DNS2=8.8.2.2
+$(Esc and :wq)
+$service network restart
+
+

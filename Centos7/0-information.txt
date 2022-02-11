@@ -8,6 +8,44 @@
 #information for system
 $uname -a
 ------------------------
+------------------------
+#change user
+$ su root
+------------------------
+------------------------
+# unreachable dns or network
+# open path for network
+$ cd /etc/netuork-scripts/
+$ vi ifefg-enpes3
+$ vi 
+$ (use i to insert)
+# save data 
+$ (Esc and :wq)
+# exit from vi without save
+$ (Esc and :q!)
+YPE-Ethernet
+B0OTPROTO-dhcp ===== if nothing write dhcp
+DEFROUTE yes
+PEERDNS yes
+EERROUTES yes
+IPU4_FAILURE FATALno
+IPU6 INIT yes
+IPU6 AUTOCONFyes
+IPU6 DEFROUTE yes
+IPU6 PEERDNS yes
+IPU6_PEERROUTES yes
+IPU6_FAILURE FATALno
+AME-enpBs3
+JUID 451249de-224-1117-98c2-34841191e5r5
+DEVICE enp@s3
+ONBOOT no ==== change yes
+$:wq
+------------------------
+------------------------
+#restart service
+service network restart
+------------------------
+------------------------
 #Ip address show
 $ip add
 ------------------------

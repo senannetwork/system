@@ -29,3 +29,5 @@ dns2=8.8.4.4
 #restart service
 service network restart
 ------------------------
+#remote divaec
+$ ssh root@xxx.xxx.xxx.xxx
