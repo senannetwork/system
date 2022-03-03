@@ -10,10 +10,27 @@
 $yum install net-tools
 ------------------------
 ------------------------
+#show the path for commed
+$which ifconfig or whereis ifconfig
+------------------------
+------------------------
+#active (running)
+$systemctl status NetworkManager.service
+------------------------
+------------------------
+#view card network
+$nmcli dev status
+------------------------
+------------------------
 #Interface for card network
 $yum install NetworkManager-tui
 $nmtui edit (name file)
+$systemctl restart network.service
 ------------------------
 #Interface for card network
 $yum install NetworkManager.service
+
+
+
+
 

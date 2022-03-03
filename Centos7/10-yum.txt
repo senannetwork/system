@@ -5,6 +5,12 @@
 -----------
 ----------------
 ------------------------
+#information
+$ yum info wget
+------------------------
+#complaer
+$ yum list gcc
+------------------------
 #to install packges
 $ yum zip unzip
 $ sudo !! (execut last order )
@@ -24,18 +30,20 @@ $ yum grouplist
 #to groupinfo packges
 $ yum groupinfo "Security Tools"
 ------------------------
-#to grouplist packges
+------------------------
+------------------------
+#0 grouplist packges
 $ yum grouplist
 ------------------------
-#to information packges
+#1 information packges
 $ yum groupinfo "xxx"
 ------------------------
-#to install packges
+#2 install packges
 $ yum groupinstall "xxx"
 ------------------------
-#to install part from packges
+#3 install part from packges
 $ yum groupinstall "xxx" aaa bbb
 ------------------------
-#to remove packges
+#4 remove packges
 $ yum groupremove "xxx" aaa bbb
 

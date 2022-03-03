@@ -12,4 +12,5 @@ $vi /etc/hosts
 ------------------------
 #restart system
 $shutdown -r now
+$127.0.0.1 xxxx
 ------------------------

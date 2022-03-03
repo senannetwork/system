@@ -1,0 +1,2 @@
+#view information for website cash
+> ipconfig /displaydns

@@ -1,17 +1,19 @@
----------------------
-# remove GUI
----------------------
-# (server configuration)
+
+# (server configuration) name or network or domain
 --> sconfig
+---------------------
 ---------------------
 # view card network
 --> netsh interface ipv4 show interface
 ---------------------
+---------------------
 # change ip network
 --> netsh interface ipv4 set address name=xxx source=static address=xxx.xxx.xxx.xxx mask=255.255.255.0 gateway=xxx.xxx.xxx.xxx
 ---------------------
+---------------------
 # make DNS Server
 --> netsh interface ipv4 add dnsserver name=xxx address=xxx.xxx.xxx.xxx INDEX=1
+---------------------
 ---------------------
 # Core Config to manage desktop server
 # login CDcore config 
@@ -24,11 +26,13 @@
 --> c: prog(tab to complite order) (Enter)
 # view folder
 --> c:\xxxxx> dir (Enter)
---> c:\xxxxx> cd CoreConfig - c:\xxxxx\xxxx> cd xxx.exe
+--> c:\xxxxx> cd CoreConfig - c:\xxxxx\xxxx> cd CoreConfig.exe
+---------------------
 ---------------------
 # powershell
 # install GUI
 --> add-windowsfeature -Name PowerShell-ISE,Server-GUI-Mgmt-Infra,Server-GUI-Shell -computer adc -Restart 
+---------------------
 ---------------------
 # Minimal installation:
 --> Mini server interface = remove roles and features = server graphical shell 
@@ -36,7 +40,14 @@ uninstall-windowsfeature Server-Gui-Shell -whatif
 uninstall-windowsfeature Server-Gui-Shell -Restart
 install-windowsfeature Server-Gui-Shell -Restart
 ---------------------
-# Remove a feature (feature-on-demand):
+---------------------
+#Remove a feature (feature-on-demand):
+uninstall-windowsfeature -name gpmc -vhd "c:\ProgramData\Microsoft\Windows\Hyper-Full\Virtual Hard Disks\Debug\Win-12 Full.vhdx" -Remove
+#Add a feature:
+Get-Windowsfeature 
+install-windowsfeature Dns -vhd "c:\ProgramData\Microsoft\Windows\Hyper-Full\Virtual Hard Disks\Debug\Win-12 Full.vhdx"
+---------------------
+---------------------
 
 
 

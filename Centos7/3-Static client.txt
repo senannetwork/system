@@ -1,4 +1,4 @@
-------------------------
+NETMASK=i=-ip------------------------
 ----------------
 -----------
 -Static -ip
@@ -20,6 +20,7 @@ $ pwd
 # go to diroctory network
 $ cd etc/sysconfig/network-scripts/
 $ vi ifcfg-ens33
+------------------------
 TYPE=Ethernet
 PROXY_METHOD=none
 BROWSER_ONLY=no
@@ -34,6 +35,7 @@ IPV6_ADDR_GEN_MODE=stable-privacy
 NAME=ens33
 UUID=6fdbf672-534b-43d8-bfcf-1edd8e78b885
 DEVICE=ens33
+============IPADD
 ONBOOT=yes
 IPADDR=xxx.xxx.xxx.xxx
 NETMASK=255.255.255.0
