@@ -1,0 +1,4 @@
+1- ifconfig = view ip host
+* ip v4 layer 3
+* mac layer 2
+* tcp udp layer 4

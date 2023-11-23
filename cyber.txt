@@ -1,0 +1,2 @@
+1-sudo su - password
+2-apt-get update && apt-get upgrade

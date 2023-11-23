@@ -1,0 +1,10 @@
+*-check list users
+> net user
+*-add user
+> net user adminsenan 123456 /add
+*-delete user
+> net user adminsenan /delete
+*-information pc
+> msinfo32
+*-information direct X
+>dxdiag
